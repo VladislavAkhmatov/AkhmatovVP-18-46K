@@ -155,7 +155,6 @@ font-family:'Montserrat', sans-serif;
     padding-left: 100px;
     padding-top: 20px;
     margin-left: -100px;
-    width: 1080px;
     height: 616px;
 }
 
@@ -321,3 +320,109 @@ font-family:'Montserrat', sans-serif;
 .feature__desc{
   font-family: 'Roboto Slab';
 }
+
+/* BLOCK CLIENTS */
+.clients {
+    padding-top: 90px;
+}
+.message {
+    display:flex;
+    align-items: center;
+}
+.message--right {
+    flex-direction: row-reverse;
+}
+.message__ava {
+    width: 220px;
+    height: 220px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+.message__text {
+    width: 661px;
+    height: 172px;
+    background-image: url('../img/messagebox-left.svg');
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-right: 30px;
+    margin: 0 20px;
+
+}
+.message__text--right {
+  background-image: url('../img/messagebox-right.svg');
+}
+.message__cite {
+    font-family: 'Roboto Slab';
+
+    color: var(--color-text-gray);
+    font-size: 1.375rem;
+    line-height: 1.5;
+}
+.message__cite::before {
+    content: '“ ';
+}
+.message__cite::after {
+    content: ' ”';
+}
+.message__author{
+  font-family: 'Roboto Slab';
+  margin-top:15px;
+   font-size: 1.125rem;
+  color:#7cc576;
+}
+.block--light-green{
+    background-color: #7cc576;
+    position: relative;
+    height: 250px;
+    margin-top: 50px;
+}
+.Readtalk{
+    font-size: 2.2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.block-green__btn {
+  font-weight: 520;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 10px;
+  background-color: #7cc576;
+  transition: 0.2s;
+  display: block;
+  margin: 0 auto;
+  max-width: 155px;
+  margin-top: 20px;
+  border: 2px solid #ffffff; 
+
+} 
+.block-green__btn:hover {
+ background-color: #ffffff;
+ color: black; 
+}
+.block-green__btn:active {
+  background-color: #acadac;
+  box-shadow: 0 3px #acadac inset;
+}
+.block-logo__logotip{
+    list-style-type: none;
+    display: flex;
+    margin:50px;
+
+}
+.Envato{
+    margin-left:300px;
+    margin-right:50px;
+}
+.Wordpress{
+    margin-right:50px;
+}
+.Tuts{
+    margin-right:50px;
+}
+.Microlancer{
+    margin-right:50px;
+}
+
