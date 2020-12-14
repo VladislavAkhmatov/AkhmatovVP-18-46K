@@ -20,6 +20,7 @@ font-family:'Montserrat', sans-serif;
 .wrap {
 	max-width: 940px;
 	margin: 0 auto;
+  padding: 0 1em;
 }
 .header-nav{
 	display: flex;
@@ -268,9 +269,9 @@ font-family:'Montserrat', sans-serif;
 }
 
 .cultute-line__item {
-    width: 170px;
+    width: calc(4.9vw + 3rem);
     border-bottom: 2px solid var(--color-text-gray);
-    margin-left: 220px;
+    margin-left: calc(10vw + 5rem);;
 }
 
 .cultute-line__right {
@@ -335,11 +336,12 @@ font-family:'Montserrat', sans-serif;
 .message__ava {
     width: 220px;
     height: 220px;
+    flex-shrink: 0;
     background-color: lightgray;
     border-radius: 50%;
 }
 .message__text {
-    width: 661px;
+    max-width: 661px;
     height: 172px;
     background-image: url('../img/messagebox-left.svg');
     background-repeat: no-repeat;
@@ -354,7 +356,6 @@ font-family:'Montserrat', sans-serif;
 }
 .message__cite {
     font-family: 'Roboto Slab';
-
     color: var(--color-text-gray);
     font-size: 1.375rem;
     line-height: 1.5;
@@ -406,10 +407,15 @@ font-family:'Montserrat', sans-serif;
   background-color: #acadac;
   box-shadow: 0 3px #acadac inset;
 }
+.block-logo{
+  margin-right: 550px;
+}
+
 .block-logo__logotip{
     list-style-type: none;
     display: flex;
     margin:50px;
+    margin-right: 400px;
 
 }
 .Envato{
@@ -459,9 +465,7 @@ font-family:'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
-.all-info{
-  display: flex;
-}
+
 .info {
     background-color: var(--color-text-black);
     padding: 60px 0;
@@ -471,6 +475,7 @@ font-family:'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.125rem;
     font-weight: 700px;
+    padding: 0 1em;
 }
 .info-column__list {
     list-style-type: none;
@@ -508,28 +513,170 @@ font-family:'Montserrat', sans-serif;
 }
 
 .copyright{
-  margin-top: 45px;
-  margin-bottom: 45px;
-  display: flex;
-  align-items: center;
-  color: #555555;
- 
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
 }
-
-.copyright-icon{
-  margin-left: 120px;
-  display: flex;
+.copyright-text{
+    font-size: 1rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    color: var(--color-text-gray);
+    padding-left: 200px;
 }
 
 .copyright-icon-twitter{
-  margin-right: 10px;
+    margin-left: 120px;
+    background: url('../img/icon-twitter.png');
+    display: block;
+    width: 41px;
+    height: 41px;
+}
+.copyright-icon-twitter:hover{
+  background: url('../img/icon-twitterhover.png');
 }
 .copyright-icon-facebook{
-  margin-right: 10px;
+    margin-left: 10px;
+    background: url('../img/icon-facebook.png');
+    display: block;
+    width: 41px;
+    height: 41px;
+}
+.copyright-icon-facebook:hover{
+  background: url('../img/icon-facebookhover.png');
 }
 .copyright-icon-pinterest{
-  margin-right: 10px;
+    margin-left: 10px;
+    background: url('../img/icon-pinterest.png');
+    display: block;
+    width: 41px;
+    height: 41px;
 }
 
+.copyright-icon-pinterest:hover{
+  background: url('../img/icon-pinteresthover.png');
+}
+
+
+.copyright-icon-google{
+    margin-left: 10px;
+    background: url('../img/icon-google.png');
+    display: block;
+    width: 41px;
+    height: 41px;
+}
+.copyright-icon-google:hover{
+  background: url('../img/icon-googlehover.png');
+}
+
+@media screen and (max-width: 768px) {
+:root {
+
+    font-size: 14px;
+}
+
+
+.cultute-line{
+  display: none;
+}
+.block-logo{
+  display: none;  
+}
+
+.block-project__ipad {
+  width: 400px;
+  top: 300px;
+}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+:root {
+    font-size: 12px;
+}
+.cultute-line{
+  display: none;
+}
+
+
+.block-project__ipad {
+  display:none;
+}
+.message__ava {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.all-info {
+
+    grid-template-columns: 290px 1fr;
+    column-gap: 50px;
+}
+
+.message {
+    flex-direction: column;
+}
+
+
+.relax {
+    display:block;
+    height: 616px;
+}
+.relax__left {
+display:none;
+}
+
+.relax__right {
+width: 100%;
+}
+
+.copyright-text{
+padding-left: 55px; 
+}
+
+
+}
+
+@media screen and (max-width: 400px){
+:root {
+    font-size: 10px;
+}
+
+.nav__item{
+    display:none;
+}
+.all-info {
+    grid-template-columns: 290px;
+    column-gap: 50px;
+}
+
+.info-column__title{
+    margin-top: 40px;
+}
+
+.copyright-text{
+ display: none;
+}
+
+}
+
+
+
+@media screen and (max-width: 320px){
+:root {
+  font-size: 8px;
+}
+.feature__img{
+  flex-direction: column;
+}
+.feature__desc{
+  flex-direction: column;
+}
 
 
